@@ -85,6 +85,7 @@ p {
 
   &:hover {
     opacity: 0.5;
+    border-bottom-width: 1px;
   }
 }
 .btn-container {
@@ -109,7 +110,10 @@ p {
   gap: 5rem;
 }
 footer {
+  padding-top: 10%;
+  min-width: 100%;
   display: grid;
+  background-color: hsl(201, 11%, 66%, 0.2);
   gap: 1rem;
 
   > :nth-child(2) {
@@ -122,6 +126,7 @@ footer {
     gap: 2rem;
     align-items: center;
     padding-bottom: 2rem;
+    justify-content: center;
   }
   .logo {
     width: 3rem;
@@ -154,6 +159,9 @@ footer {
       max-width: 40ch;
     }
   }
+  .btn {
+    max-width: max-content;
+  }
   .device {
     grid-template-columns: repeat(3, 1fr);
 
@@ -179,9 +187,18 @@ footer {
   }
   .btn-container {
     grid-template-columns: repeat(2, 1fr);
+
+    > :nth-child(1) {
+      margin-left: auto;
+    }
+    > :nth-child(2) {
+      margin-right: auto;
+    }
   }
   footer {
     justify-self: normal;
+    padding-top: 1%;
+    padding-bottom: 2%;
     grid-template-columns: 400px 1fr 1fr;
     align-items: center;
 
